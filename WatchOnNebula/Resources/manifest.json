@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Nebula Checker",
+  "version": "1.0",
+  "description": "Check if a YouTube video creator exists on Nebula.",
+  "permissions": [
+    "activeTab",
+    "*://*.youtube.com/*",
+    "*://*.nebula.tv/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "browser_action": {
+    "default_title": "Nebula Checker",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  }
+}
+

@@ -1,0 +1,759 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76196D102D26C21A005C4029 /* WatchOnNebula Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 76196D0F2D26C21A005C4029 /* WatchOnNebula Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76196CFA2D26C21A005C4029 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76196CD52D26C218005C4029 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76196CDC2D26C218005C4029;
+			remoteInfo = WatchOnNebula;
+		};
+		76196D042D26C21A005C4029 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76196CD52D26C218005C4029 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76196CDC2D26C218005C4029;
+			remoteInfo = WatchOnNebula;
+		};
+		76196D112D26C21A005C4029 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76196CD52D26C218005C4029 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76196D0E2D26C21A005C4029;
+			remoteInfo = "WatchOnNebula Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		76196D2F2D26C21A005C4029 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				76196D102D26C21A005C4029 /* WatchOnNebula Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		76196CDD2D26C218005C4029 /* WatchOnNebula.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchOnNebula.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76196CF92D26C21A005C4029 /* WatchOnNebulaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchOnNebulaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76196D032D26C21A005C4029 /* WatchOnNebulaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchOnNebulaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76196D0F2D26C21A005C4029 /* WatchOnNebula Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchOnNebula Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		76196D292D26C21A005C4029 /* Exceptions for "WatchOnNebula Extension" folder in "WatchOnNebula Extension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 76196D0E2D26C21A005C4029 /* WatchOnNebula Extension */;
+		};
+		76196D792D26CA72005C4029 /* Exceptions for "WatchOnNebula" folder in "WatchOnNebula" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 76196CDC2D26C218005C4029 /* WatchOnNebula */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		76196CDF2D26C218005C4029 /* WatchOnNebula */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				76196D792D26CA72005C4029 /* Exceptions for "WatchOnNebula" folder in "WatchOnNebula" target */,
+			);
+			path = WatchOnNebula;
+			sourceTree = "<group>";
+		};
+		76196CFC2D26C21A005C4029 /* WatchOnNebulaTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WatchOnNebulaTests;
+			sourceTree = "<group>";
+		};
+		76196D062D26C21A005C4029 /* WatchOnNebulaUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WatchOnNebulaUITests;
+			sourceTree = "<group>";
+		};
+		76196D132D26C21A005C4029 /* WatchOnNebula Extension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				76196D292D26C21A005C4029 /* Exceptions for "WatchOnNebula Extension" folder in "WatchOnNebula Extension" target */,
+			);
+			explicitFolders = (
+				Resources/_locales,
+				Resources/images,
+			);
+			path = "WatchOnNebula Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76196CDA2D26C218005C4029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76196CF62D26C21A005C4029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76196D002D26C21A005C4029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76196D0C2D26C21A005C4029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76196CD42D26C218005C4029 = {
+			isa = PBXGroup;
+			children = (
+				76196CDF2D26C218005C4029 /* WatchOnNebula */,
+				76196CFC2D26C21A005C4029 /* WatchOnNebulaTests */,
+				76196D062D26C21A005C4029 /* WatchOnNebulaUITests */,
+				76196D132D26C21A005C4029 /* WatchOnNebula Extension */,
+				76196CDE2D26C218005C4029 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76196CDE2D26C218005C4029 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76196CDD2D26C218005C4029 /* WatchOnNebula.app */,
+				76196CF92D26C21A005C4029 /* WatchOnNebulaTests.xctest */,
+				76196D032D26C21A005C4029 /* WatchOnNebulaUITests.xctest */,
+				76196D0F2D26C21A005C4029 /* WatchOnNebula Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76196CDC2D26C218005C4029 /* WatchOnNebula */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76196D302D26C21A005C4029 /* Build configuration list for PBXNativeTarget "WatchOnNebula" */;
+			buildPhases = (
+				76196CD92D26C218005C4029 /* Sources */,
+				76196CDA2D26C218005C4029 /* Frameworks */,
+				76196CDB2D26C218005C4029 /* Resources */,
+				76196D2F2D26C21A005C4029 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76196D122D26C21A005C4029 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				76196CDF2D26C218005C4029 /* WatchOnNebula */,
+			);
+			name = WatchOnNebula;
+			packageProductDependencies = (
+			);
+			productName = WatchOnNebula;
+			productReference = 76196CDD2D26C218005C4029 /* WatchOnNebula.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76196CF82D26C21A005C4029 /* WatchOnNebulaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76196D332D26C21A005C4029 /* Build configuration list for PBXNativeTarget "WatchOnNebulaTests" */;
+			buildPhases = (
+				76196CF52D26C21A005C4029 /* Sources */,
+				76196CF62D26C21A005C4029 /* Frameworks */,
+				76196CF72D26C21A005C4029 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76196CFB2D26C21A005C4029 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				76196CFC2D26C21A005C4029 /* WatchOnNebulaTests */,
+			);
+			name = WatchOnNebulaTests;
+			packageProductDependencies = (
+			);
+			productName = WatchOnNebulaTests;
+			productReference = 76196CF92D26C21A005C4029 /* WatchOnNebulaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		76196D022D26C21A005C4029 /* WatchOnNebulaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76196D362D26C21A005C4029 /* Build configuration list for PBXNativeTarget "WatchOnNebulaUITests" */;
+			buildPhases = (
+				76196CFF2D26C21A005C4029 /* Sources */,
+				76196D002D26C21A005C4029 /* Frameworks */,
+				76196D012D26C21A005C4029 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76196D052D26C21A005C4029 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				76196D062D26C21A005C4029 /* WatchOnNebulaUITests */,
+			);
+			name = WatchOnNebulaUITests;
+			packageProductDependencies = (
+			);
+			productName = WatchOnNebulaUITests;
+			productReference = 76196D032D26C21A005C4029 /* WatchOnNebulaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		76196D0E2D26C21A005C4029 /* WatchOnNebula Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76196D2A2D26C21A005C4029 /* Build configuration list for PBXNativeTarget "WatchOnNebula Extension" */;
+			buildPhases = (
+				76196D0B2D26C21A005C4029 /* Sources */,
+				76196D0C2D26C21A005C4029 /* Frameworks */,
+				76196D0D2D26C21A005C4029 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				76196D132D26C21A005C4029 /* WatchOnNebula Extension */,
+			);
+			name = "WatchOnNebula Extension";
+			packageProductDependencies = (
+			);
+			productName = "WatchOnNebula Extension";
+			productReference = 76196D0F2D26C21A005C4029 /* WatchOnNebula Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76196CD52D26C218005C4029 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					76196CDC2D26C218005C4029 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					76196CF82D26C21A005C4029 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 76196CDC2D26C218005C4029;
+					};
+					76196D022D26C21A005C4029 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 76196CDC2D26C218005C4029;
+					};
+					76196D0E2D26C21A005C4029 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 76196CD82D26C218005C4029 /* Build configuration list for PBXProject "WatchOnNebula" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76196CD42D26C218005C4029;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 76196CDE2D26C218005C4029 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76196CDC2D26C218005C4029 /* WatchOnNebula */,
+				76196CF82D26C21A005C4029 /* WatchOnNebulaTests */,
+				76196D022D26C21A005C4029 /* WatchOnNebulaUITests */,
+				76196D0E2D26C21A005C4029 /* WatchOnNebula Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76196CDB2D26C218005C4029 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76196CF72D26C21A005C4029 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76196D012D26C21A005C4029 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76196D0D2D26C21A005C4029 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76196CD92D26C218005C4029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76196CF52D26C21A005C4029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76196CFF2D26C21A005C4029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76196D0B2D26C21A005C4029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76196CFB2D26C21A005C4029 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76196CDC2D26C218005C4029 /* WatchOnNebula */;
+			targetProxy = 76196CFA2D26C21A005C4029 /* PBXContainerItemProxy */;
+		};
+		76196D052D26C21A005C4029 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76196CDC2D26C218005C4029 /* WatchOnNebula */;
+			targetProxy = 76196D042D26C21A005C4029 /* PBXContainerItemProxy */;
+		};
+		76196D122D26C21A005C4029 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76196D0E2D26C21A005C4029 /* WatchOnNebula Extension */;
+			targetProxy = 76196D112D26C21A005C4029 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		76196D2B2D26C21A005C4029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "WatchOnNebula Extension/WatchOnNebula_Extension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 735SJP826T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchOnNebula Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchOnNebula Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = smog.sh.WatchOnNebula.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		76196D2C2D26C21A005C4029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "WatchOnNebula Extension/WatchOnNebula_Extension.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 735SJP826T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WatchOnNebula Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WatchOnNebula Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = smog.sh.WatchOnNebula.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		76196D2D2D26C21A005C4029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		76196D2E2D26C21A005C4029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		76196D312D26C21A005C4029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WatchOnNebula/WatchOnNebula.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 735SJP826T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WatchOnNebula/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchOnNebula;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = smog.sh.WatchOnNebula;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		76196D322D26C21A005C4029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WatchOnNebula/WatchOnNebula.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 735SJP826T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WatchOnNebula/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchOnNebula;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = smog.sh.WatchOnNebula;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		76196D342D26C21A005C4029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = smog.sh.WatchOnNebulaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchOnNebula.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WatchOnNebula";
+			};
+			name = Debug;
+		};
+		76196D352D26C21A005C4029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = smog.sh.WatchOnNebulaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchOnNebula.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WatchOnNebula";
+			};
+			name = Release;
+		};
+		76196D372D26C21A005C4029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = smog.sh.WatchOnNebulaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = WatchOnNebula;
+			};
+			name = Debug;
+		};
+		76196D382D26C21A005C4029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = smog.sh.WatchOnNebulaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = WatchOnNebula;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76196CD82D26C218005C4029 /* Build configuration list for PBXProject "WatchOnNebula" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76196D2D2D26C21A005C4029 /* Debug */,
+				76196D2E2D26C21A005C4029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76196D2A2D26C21A005C4029 /* Build configuration list for PBXNativeTarget "WatchOnNebula Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76196D2B2D26C21A005C4029 /* Debug */,
+				76196D2C2D26C21A005C4029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76196D302D26C21A005C4029 /* Build configuration list for PBXNativeTarget "WatchOnNebula" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76196D312D26C21A005C4029 /* Debug */,
+				76196D322D26C21A005C4029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76196D332D26C21A005C4029 /* Build configuration list for PBXNativeTarget "WatchOnNebulaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76196D342D26C21A005C4029 /* Debug */,
+				76196D352D26C21A005C4029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76196D362D26C21A005C4029 /* Build configuration list for PBXNativeTarget "WatchOnNebulaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76196D372D26C21A005C4029 /* Debug */,
+				76196D382D26C21A005C4029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76196CD52D26C218005C4029 /* Project object */;
+}
