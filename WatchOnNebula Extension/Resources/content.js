@@ -4,6 +4,43 @@ console.log("[Nebula Checker]: Content script loaded.");
 // Track the current URL
 let currentUrl = window.location.href;
 
+// Notify user when a creator exists on Nebula
+// Permission to notify the user is requested if it is first denied
+function notifyUser(creator, nebulaUrl) {
+  console.log(`[Nebula Checker]: Preparing to notify user about ${creator}`);
+  if (Notification.permission === "granted") {
+    const notification = new Notification("Nebula Checker", {
+      body: `${creator} exists on Nebula! Click to view.`,
+      icon: "nebula-icon.png", // Replace with your extension's icon path
+    });
+
+    notification.onclick = () => {
+      console.log(`[Nebula Checker]: Notification clicked. Opening ${nebulaUrl}`);
+      window.open(nebulaUrl, "_blank");
+    };
+
+    console.log("[Nebula Checker]: Notification sent.");
+  } else if (Notification.permission !== "denied") {
+    console.log("[Nebula Checker]: Requesting notification permission...");
+    Notification.requestPermission().then((permission) => {
+      if (permission === "granted") {
+        notifyUser(creator, nebulaUrl); // Retry notification
+      } else {
+        console.log("[Nebula Checker]: Notification permission denied.");
+        alert(
+          "Nebula Checker: Please allow notifications to receive updates about creators available on Nebula."
+        );
+      }
+    });
+  } else {
+    console.log("[Nebula Checker]: Notifications are denied by the user.");
+    alert(
+      "Nebula Checker: Notifications are blocked. Please enable them in browser settings."
+    );
+  }
+}
+
+
 // Handle YouTube page logic
 function handleYouTubePage() {
   // Extract video title from document title
@@ -25,6 +62,8 @@ function handleYouTubePage() {
     if (exists) {
       const nebulaUrl = generateNebulaUrl(creatorName, videoTitle);
       console.log("[Nebula Checker]: Nebula URL:", nebulaUrl);
+
+      notifyUser(creatorName, nebulaUrl); // Notify the user
 
       // Notify the background script
       browser.runtime.sendMessage({ type: "notify", url: nebulaUrl });
