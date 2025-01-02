@@ -4,75 +4,63 @@ console.log("[Nebula Checker]: Content script loaded.");
 // Track the current URL
 let currentUrl = window.location.href;
 
-// Observe changes to the DOM to detect URL changes
-const observer = new MutationObserver(() => {
-  if (currentUrl !== window.location.href) {
-    currentUrl = window.location.href;
-    console.log("[Nebula Checker]: URL changed:", currentUrl);
-
-    // Re-run the page handling logic
-    handleYouTubePage();
-  }
-});
-
-// Start observing the DOM
-observer.observe(document.body, { childList: true, subtree: true });
-
 // Handle YouTube page logic
-let currentUrl = window.location.href;
-
 function handleYouTubePage() {
-  // Wait for DOM updates to ensure new values are loaded
-  setTimeout(() => {
-    const videoTitleElement = document.querySelector('meta[name="title"]');
-    const creatorNameElement = document.querySelector('ytd-channel-name a');
+  // Extract video title from document title
+  const videoTitle = document.title.replace(" - YouTube", "").trim();
+  const creatorNameElement = document.querySelector('ytd-channel-name a');
 
-    if (!videoTitleElement || !creatorNameElement) {
-      console.log("[Nebula Checker]: Metadata not yet available. Retrying...");
-      setTimeout(handleYouTubePage, 500); // Retry after a delay
-      return;
+  if (!creatorNameElement) {
+    console.log("[Nebula Checker]: Creator name not yet available. Retrying...");
+    setTimeout(handleYouTubePage, 500); // Retry after a delay
+    return;
+  }
+
+  const creatorName = creatorNameElement.textContent.trim();
+
+  console.log("[Nebula Checker]: Video Title:", videoTitle, "Creator Name:", creatorName);
+
+  // Check if the creator exists on Nebula
+  checkNebulaCreator(creatorName).then((exists) => {
+    if (exists) {
+      const nebulaUrl = generateNebulaUrl(creatorName, videoTitle);
+      console.log("[Nebula Checker]: Nebula URL:", nebulaUrl);
+
+      // Notify the background script
+      browser.runtime.sendMessage({ type: "notify", url: nebulaUrl });
+    } else {
+      console.log("[Nebula Checker]: Creator not found on Nebula:", creatorName);
     }
-
-    const videoTitle = videoTitleElement.content;
-    const creatorName = creatorNameElement.textContent.trim();
-
-    console.log("[Nebula Checker]: Video Title:", videoTitle, "Creator Name:", creatorName);
-
-    // Check if the creator exists on Nebula
-    checkNebulaCreator(creatorName).then((exists) => {
-      if (exists) {
-        const nebulaUrl = generateNebulaUrl(creatorName, videoTitle);
-        console.log("[Nebula Checker]: Nebula URL:", nebulaUrl);
-
-        // Notify the background script
-        browser.runtime.sendMessage({ type: "notify", url: nebulaUrl });
-      }
-    });
-  }, 1000); // Initial delay to ensure DOM updates
+  });
 }
 
+// MutationObserver to watch for changes in the video title and creator
+function monitorMetadataChanges() {
+  const titleElement = document.querySelector('h1.title yt-formatted-string') || document.querySelector('meta[name="title"]');
+  const creatorElement = document.querySelector('ytd-channel-name a');
 
-// Observe DOM changes to detect URL changes and trigger handleYouTubePage
-const observer = new MutationObserver(() => {
-  if (currentUrl !== window.location.href) {
-    currentUrl = window.location.href; // Update tracked URL
-    console.log("[Nebula Checker]: URL changed. Running handleYouTubePage...");
-    handleYouTubePage(); // Trigger detection
+  if (!titleElement || !creatorElement) {
+    console.log("[Nebula Checker]: Title or creator not found. Retrying...");
+    setTimeout(monitorMetadataChanges, 500); // Retry after a delay
+    return;
   }
-});
 
-observer.observe(document.body, { childList: true, subtree: true });
+  const observer = new MutationObserver(() => {
+    if (currentUrl !== window.location.href) {
+      console.log("[Nebula Checker]: URL changed. Waiting for DOM updates...");
+      currentUrl = window.location.href; // Update the current URL
+      handleYouTubePage(); // Trigger detection
+    }
+  });
 
-// Initial detection on page load
-handleYouTubePage();
+  // Observe both the title and creator elements
+  observer.observe(titleElement, { childList: true, subtree: true });
+  observer.observe(creatorElement, { childList: true, subtree: true });
 
-// Debugging to confirm script load
-console.log("[Nebula Checker]: Content script loaded.");
-
-
+  console.log("[Nebula Checker]: Monitoring metadata changes.");
+}
 
 // Check if a creator exists on Nebula
-// Now using iframe
 async function checkNebulaCreator(creator) {
   const normalizedCreator = creator.toLowerCase().replace(/\s+/g, ''); // Normalize creator name
 
@@ -94,8 +82,6 @@ async function checkNebulaCreator(creator) {
   }
 }
 
-
-
 // Generate the Nebula video URL
 function generateNebulaUrl(creator, title) {
   const sanitizedCreator = creator.toLowerCase().replace(/\s+/g, ''); // Remove spaces and lowercase
@@ -109,7 +95,7 @@ function generateNebulaUrl(creator, title) {
   return `https://nebula.tv/videos/${sanitizedCreator}-${sanitizedTitle}`;
 }
 
-// Initial run for the current page
-handleYouTubePage();
-
-
+// Initialize the script: handle the first load and set up monitoring
+console.log("[Nebula Checker]: Initializing...");
+handleYouTubePage(); // Handle the initial load
+monitorMetadataChanges(); // Start monitoring metadata changes
